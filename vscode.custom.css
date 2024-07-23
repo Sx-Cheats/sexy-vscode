@@ -1,0 +1,609 @@
+*:not(.monaco-editor):not(.vertical):not(.debug-toolbar):not(.split-view-view):not(.composite-bar):not(.terminal-tabs-entry) {
+  box-shadow: none !important;
+}
+
+.sidebar {
+  border-right: 1px dashed var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+}
+
+.panel {
+  opacity: 1 !important;
+}
+
+.monaco-list:not(.drop-target):not(.dragging) .monaco-list-row:hover:not(.selected):not(.focused) {
+  border: 1px solid var(--vscode-selection-background)  !important
+}
+
+
+.activitybar {
+  background-color: var(--vscode-diffEditor-unchangedRegionBackground) !important;
+  border-right: 1px solid var(--vscode-selection-background)  !important
+}
+
+.monaco-workbench .pane-body.integrated-terminal .split-view-view:last-child .tabs-container, .monaco-workbench .pane-body.integrated-terminal .terminal-group .monaco-split-view2.horizontal .split-view-view:not(:first-child) {
+  border-left-style: dashed !important;
+  border-color: var(--vscode-badge-background) !important;
+}
+
+.monaco-split-view2.separator-border.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before {
+  border-top: 1px dashed  var(--vscode-badge-background) !important;
+}
+
+.titlebar.part {
+  border: none !important;
+  background-color: var(--vscode-diffEditor-unchangedRegionBackground) !important
+}
+
+.editor.part > .content * > .split-view-container > .split-view-view.visible::before {
+  border-right: 1px dashed var(--vscode-badge-background) !important;
+  background: unset
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title>.tabs-and-actions-container.tabs-border-bottom:after {
+  height: 0.5px !important;
+}
+
+* {
+  --vscode-scrollbarSlider-background: var(--vscode-selection-background) !important;
+  --vscode-scrollbarSlider-hoverBackground: var(--vscode-selection-background) !important;
+  --vscode-scrollbarSlider-activeBackground: var(--vscode-selection-background) !important;
+  --editor-group-tab-height: 40px !important;
+  --tabs-border-bottom-color: var(--vscode-selection-background) !important;
+}
+
+body {
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+
+
+.vscode-background-custom {
+  position: absolute !important;
+  top: 0px !important;
+  opacity: 1!important;
+  left: 0px !important;
+  z-index: -1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  filter:  contrast(1.2) blur(5px) !important; 
+}
+
+.chromium > *:not(.vscode-background-custom):not(.quick-input-widget) {
+  opacity: 0.93 !important;
+  /* scroll-behavior: smooth !important; */
+  /* filter: saturate(1.5) contrast(1.05) */
+}
+
+.composite-bar-container * > .action-item > a {
+  font-family: 'FiraCode Nerd Font Light' !important;
+}
+
+.monaco-inputbox .monaco-button .monaco-tl-contents .scm-input > .scm-editor {
+  border-radius: 5px !important;
+}
+
+.monaco-button-dropdown > .monaco-button {
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.monaco-button-dropdown > .monaco-dropdown-button {
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+#workbench\.parts\.activitybar.activitybar .content > .activity-bar-placeholder-win {
+  position: absolute !important;
+}
+
+.activitybar * > .composite-bar > .monaco-action-bar {
+  background: unset !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .badge .badge-content {
+  font-size: 1em !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container {
+  gap: 10px !important;
+  align-items: center !important;
+  padding: 5px 10px !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container .tab {
+  gap: 10px !important;
+  border: none !important;
+  border: 1px solid var(--vscode-editor-findMatchBackground) !important;
+  --tab-border-bottom-color: transparent !important;
+  outline: none !important;
+  height: calc(100% - 5px) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  filter: contrast(1.01) brightness(0.9);
+}
+
+
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container[role=tablist] .tab > .monaco-icon-label {
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.panel.part {
+  border-top: 1px dashed var(--vscode-badge-background) !important;
+  box-shadow: 0px 2px 3px 0px var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important
+}
+
+.monaco-diff-editor.side-by-side .editor.modified {
+  border-left: 1px dashed var(--vscode-badge-background) !important;
+}
+
+.monaco-diff-editor.side-by-side .editor.original {
+  border-right: 1px dashed var(--vscode-badge-background) !important;
+}
+
+#workbench\.parts\.panel.pane-composite-part {
+  height: 100% !important
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .actions-container {
+  margin-left: 10px;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .actions-container li {
+  height: calc(100% - 5px) !important
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar {
+  border: none !important;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container {
+  height: calc(100% - 5px) !important;
+  /* filter: contrast(1.01) brightness(0.9); */
+  gap: 10px;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container li {
+  background-color: var(--vscode-tab-inactiveBackground) !important;
+  /* filter: contrast(1.1) brightness(1.15); */
+  border: 1px solid var(--vscode-editor-findMatchBackground) !important;
+  border-radius: 8px !important;
+  list-style: none !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container li:hover {
+  border: 1px solid var(--vscode-selection-background) !important;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container .active-item-indicator:before {
+  border-top: none !important;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container li .action-label:hover {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container li.checked {
+  border: 1px solid var(--vscode-badge-background) !important;
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+}
+
+
+
+
+#workbench\.parts\.panel .composite.title.has-composite-bar .composite-bar > .monaco-action-bar > .actions-container li .badge-content {
+  font-family: system-ui !important;
+  font-weight: bold !important;
+  font-size: 0.9em !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab>.tab-actions .action-label.codicon {
+  margin-right: 5px !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container .tab .tab-border-top-container {
+  display: none !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container .tab >div::after {
+  font-family: "FiraCode Nerd Font" !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top {
+  border: 1px solid var(--vscode-badge-background) !important;
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container .tab:hover {
+  filter: contrast(1.01) brightness(1.01);
+  border: 1px solid var(--vscode-selection-background) !important;
+}
+
+#workbench\.parts\.activitybar.activitybar .content .global-activity-actionbar .actions-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: end !important;
+  align-items: center !important;
+  margin-top: -15px !important;
+  gap: 0px !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * > .actions-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 15px;
+  align-items: center !important;
+}
+
+.chromium:not(.fullscreen) .menubar.compact.overflow-menu-only {
+    display: none !important;
+
+}
+
+.menubar-menu-items-holder {
+  opacity: 1 !important;
+  position: absolute !important;
+
+  z-index: 100000 !important
+}
+
+
+.debug-toolbar {
+  border: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+}
+
+.menubar-menu-items-holder > * {
+  border: 1px solid var(--vscode-icon-foreground) !important;
+ 
+  outline: none !important
+}
+
+.pane * > .monaco-list-rows .monaco-list-row.focused:not(.selected) {
+  outline: none !important;
+  border: 1px solid var(--vscode-editor-findMatchBackground) !important;
+  background-color: var(--vscode-editor-selectionHighlightBackground)  !important
+}
+
+.pane * > .monaco-list-rows > .monaco-list-row.selected {
+  background-color: unset !important;
+  border: unset !important;
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry.is-active {
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+  border: 1px solid var(--vscode-editor-findMatchBackground) !important
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry .monaco-icon-label-container .monaco-icon-name-container .codicon-terminal {
+  height: 15px !important;
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry.is-active  span {
+  color: var(--vscode-badge-background) !important;
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry {
+  height: -webkit-fill-available !important;
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry.is-active * > .actions {
+  display: flex !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title.breadcrumbs .monaco-icon-label:after .monaco-workbench .part.editor>.content .editor-group-container>.title.tabs .monaco-icon-label:after {
+  font-family: system-ui !important;
+}
+
+.pane-body * > .monaco-list-rows * > .terminal-tabs-entry.is-active * {
+  color: var(--vscode-list-inactiveSelectionForeground) !important;
+}
+
+.pane * > .monaco-list-rows >  .monaco-list-row.selected .label-name span {
+  color: var(--vscode-badge-background) !important
+}
+
+.monaco-list:before {
+  outline: 0px !important
+}
+
+.editor-group-container.active  .tab.selected .monaco-icon-label:not(.monaco-decoration-itemColor--9ieymw)>.monaco-icon-label-container>.monaco-icon-name-container > .label-name {
+  color: var(--vscode-badge-background) !important;
+}
+
+.monaco-icon-label:not(.monaco-decoration-itemColor--9ieymw)>.monaco-icon-label-container>.monaco-icon-name-container>.label-name {
+  color: var(--vscode-editorHint-foreground) !important;
+  font-family: "FiraCode Nerd Font" !important;
+  font-weight: 350 !important;
+}
+
+.monaco-decoration-itemColor--9ieymw {
+  color: var(--vscode-editorInlayHint-foreground) !important
+}
+
+.monaco-workbench .monaco-list .monaco-list-row .monaco-highlighted-label .highlight {
+  color: var(--vscode-badge-background) !important
+}
+
+.monaco-workbench .monaco-list .monaco-list-row.focused .monaco-highlighted-label .highlight {
+  color: var(--vscode-badge-background) !important
+}
+
+div.pane-header {
+  font-family: system-ui !important;
+  border-top: 1px solid var(--vscode-selection-background)   !important;
+  color: var(--vscode-editorHint-foreground) !important
+}
+
+.monaco-list.list_id_2:focus .monaco-list-row.selected .codicon {
+  color: var(--vscode-list-activeSelectionIconForeground);
+}
+
+.composite .pane * > .monaco-tl-contents .monaco-icon-label.file-icon::after {
+  font-family: system-ui !important
+}
+
+.quick-input-list .monaco-list-row {
+  border-radius: 8px !important
+}
+
+.composite .pane * > .monaco-tl-contents .monaco-icon-label.file-icon::before {
+  font-family: system-ui !important
+}
+
+
+
+#workbench\.view\.explorer.composite .pane * > .monaco-list-row.selected {
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+  border: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+}
+
+.shell-integration  .tabs-container .monaco-list  .monaco-list-row {
+  outline: none !important;
+  border: none !important;
+}
+
+#workbench\.view\.explorer.composite .pane * > .monaco-list-row:hover:not(.selected):not(.focused) {
+  background-color: var(--vscode-list-hoverBackground) !important;
+  border: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+}
+
+.quick-input-list * > .monaco-list-row.focused {
+  background-color: var(--vscode-editor-findMatchBackground) !important
+}
+
+.quick-input-list {
+  margin: 15px 0px !important
+}
+
+.quick-input-list * > .monaco-list-rows > .monaco-list-row {
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0px 10px !important;
+  width: calc(100% - 20px);
+}
+
+.quick-input-list * > .monaco-list-rows > .monaco-list-row.focused {
+  border: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important
+}
+
+.quick-input-list * > .monaco-list-rows > .monaco-list-row.focused .uri-icon {
+  color: var(--vscode-list-inactiveSelectionForeground) !important;
+  opacity: 1 !important;
+}
+
+.quick-input-list * > .monaco-list-rows > .monaco-list-row.focused .codicon {
+  color: var(--vscode-list-inactiveSelectionForeground) !important;
+  opacity: 1 !important;
+}
+
+.quick-input-list * > .quick-input-list-row .monaco-icon-label {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.panel .tabs-container {
+  border-left: 1px dashed  var(--vscode-badge-background)  !important
+}
+
+.test-output-peek-tree {
+  border-left:  1px dashed  var(--vscode-badge-background)  !important
+}
+
+.panel .tabs-container > .tabs-list-container {
+  margin-top: 10px !important;
+}
+
+.panel .tabs-container > .tabs-list-container .monaco-scrollable-element .monaco-list-rows {
+  height: 100% !important;
+  display: flex !important;
+  gap: 5px;
+  align-items: center;
+  flex-direction: column !important;
+}
+
+.panel .tabs-container > .tabs-list-container .monaco-scrollable-element .monaco-list-row {
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  position: static !important;
+}
+
+.quick-input-widget{
+  opacity: 0.9 !important;
+}
+
+.monaco-action-bar .actions-container.highlight-toggled .action-label.checked {
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+}
+.monaco-action-bar .actions-container.highlight-toggled .action-label.checked::before {
+  color: var(--vscode-badge-background) !important;
+}
+
+.monaco-workbench .monaco-action-bar:not(.vertical) .action-item .action-label:hover:not(.disabled) {
+  background-color: var(--vscode-editor-findMatchBackground) !important;
+  color: var(--vscode-badge-background) !important;
+}
+
+.quick-input-widget.show-file-icons {
+  top: calc((calc(100vh - 50%) / 2)) !important;
+  border: 1px solid var(--vscode-badge-background) !important;
+}
+
+.activitybar * > .active-item-indicator {
+  border-radius: 8px !important
+}
+
+.activitybar * > .active-item-indicator::before {
+  border: none !important
+}
+
+.monaco-findInput>.controls {
+  right: 5px !important
+}
+
+.monaco-workbench.vs-dark .part.editor>.content .editor-group-container .editor-group-watermark>.letterpress {
+  background-image: none !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.monaco-workbench.vs-dark .part.editor>.content .editor-group-container .editor-group-watermark>.letterpress > svg {
+  fill: var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+}
+
+.monaco-decoration-itemBadge--qbi6it::after .monaco-decoration-itemBadge--qbi6iu::after {
+  font-family: system-ui !important
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item > * {
+  padding: 0px !important;
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.monaco-inputbox.synthetic-focus .scm-view .scm-editor {
+  outline: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+  overflow: hidden !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar {
+  border: 1px solid var(--vscode-editorOverviewRuler-selectionHighlightForeground) !important;
+  background-color: var(--vscode-list-hoverBackground) !important;
+  border-radius: 8px !important;
+  padding: 10px 0px !important;
+  margin-bottom: 10px !important;
+  width: 50px !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item:not(.checked) .action-label.uri-icon {
+  background-color: var(--vscode-list-inactiveSelectionForeground) !important;
+  opacity: 0.6 !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item:not(.checked) .action-label.uri-icon:hover {
+  opacity: 1 !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item:not(.checked) .action-label.codicon {
+  color: var(--vscode-list-inactiveSelectionForeground) !important;
+  opacity: 0.6 !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item:not(.checked) .action-label.codicon:hover {
+  opacity: 1 !important;
+}
+
+#workbench\.parts\.activitybar.activitybar * >.composite-bar * >.action-item .action-label {
+  z-index: 500 !important
+}
+
+#workbench\.parts\.activitybar.activitybar * > .global-activity-actionbar > .monaco-action-bar {
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+  height: auto !important
+}
+
+#workbench\.parts\.activitybar.activitybar * > .global-activity-actionbar {
+  flex-basis: 100% !important;
+  display: flex  !important;
+  justify-content: center  !important;
+  align-items: end  !important;
+}
+
+.explorer-folders-view * > .monaco-scrollable-element .monaco-list-row {
+  border-radius: 8px !important;
+  margin: 0px 10px !important;
+  width: calc(100% - 30px) !important;
+}
+
+.activitybar * > .badge {
+  overflow: visible !important
+}
+
+.tabs-and-actions-container.tabs-border-bottom:after {
+  background: unset
+}
+
+#workbench\.parts\.activitybar.activitybar {
+  overflow-y: auto !important;
+}
+
+#workbench\.parts\.activitybar.activitybar > .content {
+  overflow: hidden;
+  align-items: center;
+  gap: 10px !important;
+  justify-content: space-between;
+  scroll-snap-type: x proximity !important;
+  height: auto !important;
+  min-height: 100% !important;
+  flex: 1;
+}
+
+.chromium:not(.fullscreen) #workbench\.parts\.activitybar.activitybar > .content {
+  min-height: calc(100% - var(--editor-group-tab-height)) !important;
+}
+
+#workbench\.parts\.activitybar.activitybar::-webkit-scrollbar {
+  width: 4px
+}
+
+#workbench\.parts\.activitybar.activitybar::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  background: var(--vscode-scrollbarSlider-background)
+}
+
+
+
+.profile-badge > .profile-badge-content {
+  font-family: system-ui !important;
+  font-weight: bold !important;
+}
+
+.activitybar * > .action-item .badge-content {
+  padding: 0px !important;
+
+  min-width: 15px !important;
+  width: auto;
+  font-family: system-ui !important;
+  font-weight: bold !important;
+  position: relative;
+  height: 15px !important;
+  top: calc(calc(100% + 30px) / 2) !important;
+  left: calc(calc(100% - 30px) / 2) !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
