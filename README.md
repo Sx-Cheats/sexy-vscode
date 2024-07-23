@@ -22,6 +22,9 @@
 ![alt test](https://github.com/Sx-Cheats/sexy-vscode/blob/main/previews/preview2.png)
 ![alt test](https://github.com/Sx-Cheats/sexy-vscode/blob/main/previews/preview3.png)
 
+---
+_Recommended theme: [BeardedBear](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)_ 
+---
 
 | **Os**        | **Supported** |
 | ------- | --------- |
