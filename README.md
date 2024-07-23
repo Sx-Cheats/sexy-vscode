@@ -29,3 +29,5 @@
 | **Mac**            | ✔️                 |
 | **Windows**        | 🤷‍♂️              |
 
+**_Author: [$x-Cheats](https://github.com/Sx-Cheats)_**
+
